@@ -1,5 +1,5 @@
 {% set name = "microsoft-kiota-serialization-json" %}
-{% set version = "1.6.7" %}
+{% set version = "1.6.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/microsoft_kiota_serialization_json-{{ version }}.tar.gz
-  sha256: 4b3937fed74583070bde614700cf557da2ae20efde778987e61b3c0e117d69ba
+  sha256: 89e2dd0eb4eaaa6ab74fa89ab5d84c5a53464e73b85eb7085f0aa4560a2b8183
 
 build:
   noarch: python
