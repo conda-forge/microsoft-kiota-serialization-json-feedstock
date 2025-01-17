@@ -1,5 +1,5 @@
 {% set name = "microsoft-kiota-serialization-json" %}
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/microsoft_kiota_serialization_json-{{ version }}.tar.gz
-  sha256: 119dcda60aa4cd1700c4139ed0cf9550c950bc6ae855cc956b0f86c0043166c1
+  sha256: 45b401c6c3c95e299a0cc12936bff4772c2518d2600c51f9a7717befdad43b76
 
 build:
   noarch: python
@@ -22,7 +22,6 @@ requirements:
   run:
     - python >={{ python_min }},<4.0
     - microsoft-kiota-abstractions
-    - pendulum >=3.0.0
 
 test:
   imports:
