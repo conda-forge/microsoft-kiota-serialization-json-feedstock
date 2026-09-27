@@ -1,6 +1,6 @@
 context:
   name: microsoft-kiota-serialization-json
-  version: "1.10.1"
+  version: 1.14.1
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/microsoft_kiota_serialization_json-${{ version }}.tar.gz
-  sha256: 71792246fd1f28f73ffb5d916a63763062f84055f197d282ed59c37181ba09c9
+  sha256: 4c3eb47ace9128ad53bbcd51d5862d8501dbd687d988dd9ffef8567532d63497
 
 build:
   noarch: python
@@ -19,11 +19,10 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - poetry-core >=1.0.0
+    - flit-core >=3.2,<5
   run:
     - python >=${{ python_min }},<4.0
-    - microsoft-kiota-abstractions ${{ version }}.*
-
+    - microsoft-kiota-abstractions >=1.11.1,<2.0.0
 tests:
   - python:
       imports:
