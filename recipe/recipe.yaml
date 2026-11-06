@@ -1,6 +1,6 @@
 context:
   name: microsoft-kiota-serialization-json
-  version: "1.16.0"
+  version: "1.17.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/microsoft_kiota_serialization_json-${{ version }}.tar.gz
-  sha256: 0be706cf30f6597faf932202767e742fe01db42ced89c74f6f5a513c263764da
+  sha256: 73268ed6f307cf14e568ebb25a9c5f4423501816a7daa13ad24aee226a79fded
 
 build:
   noarch: python
